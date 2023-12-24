@@ -9,7 +9,7 @@ public class FirstJUnitTest {
     @BeforeAll
     static void beforeAll(){
      //Configuration.holdBrowserOpen = true;
-        System.out.println("тесты начались");
+        System.out.println("тесты начались!");
     }
 
     @AfterAll
