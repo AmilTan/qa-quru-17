@@ -4,20 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="added css xpath examples">
-      <change afterPath="$PROJECT_DIR$/src/test/java/homework/checkForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/images/testimage1.png" afterDir="false" />
+    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="all updates in it. LESSON7">
+      <change afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/Components/CalendarComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/Components/RegistrationResultsModal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
     </list>
@@ -98,9 +101,20 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/images" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demoqa.Pages" />
+      <recent name="demoqa" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.checkForm.fillFormTest">
-    <configuration name="FirstJUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.RegistrationWithObjectTests">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="demoqa-tests-17.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationWithObjectTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,7 +127,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;junit.FirstJUnitTest&quot;" />
+            <option value="&quot;demoqa.FormWithObjects.Pages.RegistrationWithObjectTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,7 +137,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestBoxTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationWithObjectTests.fillFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,30 +150,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demoqa.TestBoxTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestBoxTests.fillFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;demoqa.TestBoxTests.fillFormTest&quot;" />
+            <option value="&quot;demoqa.FormWithObjects.Pages.RegistrationWithObjectTests.fillFormTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -217,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationWithObjectTests" />
+        <item itemvalue="Gradle.RegistrationWithObjectTests.fillFormTest" />
+        <item itemvalue="Application.main" />
         <item itemvalue="Gradle.checkForm.fillFormTest" />
         <item itemvalue="Gradle.checkForm" />
-        <item itemvalue="Gradle.TestBoxTests.fillFormTest" />
-        <item itemvalue="Gradle.TestBoxTests" />
-        <item itemvalue="Gradle.FirstJUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703788531798</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="all updates in it. LESSON7">
+      <created>1703963108884</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703963108884</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +294,7 @@
     <MESSAGE value="added dependencies" />
     <MESSAGE value="added tests" />
     <MESSAGE value="added css xpath examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="added css xpath examples" />
+    <MESSAGE value="all updates in it. LESSON7" />
+    <option name="LAST_COMMIT_MESSAGE" value="all updates in it. LESSON7" />
   </component>
 </project>
