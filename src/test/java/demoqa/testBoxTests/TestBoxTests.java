@@ -1,4 +1,4 @@
-package demoqa;
+package demoqa.testBoxTests;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
