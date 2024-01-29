@@ -3,6 +3,7 @@ package demoqa.FormWithObjects.Pages;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -12,8 +13,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 
 public class RegistrationWithObjectTests extends TestBase {
-
     @Test
+    @Tag("simple")
     @Feature("Форма регистрации студента")
     @Story("Итоговое окно с данными из формы")
     @Owner("Satoru Gojo")
