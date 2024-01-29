@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="1)Лишние классы удалены, 2)аллюр отчет подключен, 3)ПОДХОД СТЕП внедрен, 4) Снимок в конце теста подключен, 5)Обработка всплывающего попапа  добавлена">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/Components/CalendarComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/Components/RegistrationResultsModal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/homework/checkForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/junit/FirstJUnitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/locators/CssXpathExamples.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706553135373</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1)Лишние классы удалены, 2)аллюр отчет подключен, 3)ПОДХОД СТЕП внедрен, 4) Снимок в конце теста подключен, 5)Обработка всплывающего попапа  добавлена">
+      <created>1706559138761</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706559138761</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
