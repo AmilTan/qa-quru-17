@@ -1,5 +1,4 @@
-package demoqa.FormWithObjects.Pages.Components;
-import static com.codeborne.selenide.Condition.*;
+package demoqa.FormWithObjects.Pages.RegistrationPage.Components;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CalendarComponent {

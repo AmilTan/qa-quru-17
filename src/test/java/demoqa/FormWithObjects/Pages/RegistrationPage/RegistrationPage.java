@@ -1,12 +1,18 @@
 package demoqa.FormWithObjects.Pages.RegistrationPage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import demoqa.FormWithObjects.Pages.Components.CalendarComponent;
-import demoqa.FormWithObjects.Pages.Components.RegistrationResultsModal;
+import com.codeborne.selenide.WebDriverRunner;
+import demoqa.FormWithObjects.Pages.RegistrationPage.Components.CalendarComponent;
+import demoqa.FormWithObjects.Pages.RegistrationPage.Components.RegistrationResultsModal;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
@@ -32,40 +38,46 @@ RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal
             stateInput = $("input#react-select-3-input"),
             cityInput = $("input#react-select-4-input"),
             submitConfirmation = $("#submit"),
-            modalTitle = $("#example-modal-sizes-title-lg");
+            googlePopup = $(".fc-dialog-container"),
+            googlePopupAgreeButton = $(".fc-button.fc-cta-consent.fc-primary-button");
+
 
 
 
     //Первый вариант
-
+    @Step("Открываем страницу с формой регистрации")
     public RegistrationPage openPage() {
         open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(Condition.text(TITLE_TEXT));
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
+       if (googlePopup.exists()) {
+           googlePopupAgreeButton.click();
+       }
+
         return this;
     }
-
+    @Step("Указали Имя")
     public RegistrationPage setFirstName(String value) {
         firstNameInput.setValue(value);
         return this;
     }
-
+    @Step("Указали Фамилию")
     public RegistrationPage setLastName(String value) {
         lastNameInput.setValue(value);
         return this;
     }
-
+    @Step("Указали Email")
     public RegistrationPage setEmail(String value) {
         emailInput.setValue(value);
         return this;
     }
-
+    @Step("Указали телефон")
     public RegistrationPage setUserNumber(String value) {
         userNumberInput.setValue(value);
         return this;
     }
-
+    @Step("Выбрали гендер")
     public RegistrationPage ClickGenderButton(String value) {
         switch (value) {
             case "Male":
@@ -80,18 +92,18 @@ RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal
         }
         return this;
     }
-
+    @Step("Указали день рождения")
     public RegistrationPage setBirthDate(String day, String month, String year) {
         dateOfBirthInput.click();
         calendarComponent.setDate(day, month, year);
         return this;
     }
-
+    @Step("Выбрали дисциплину")
     public RegistrationPage setSubject(String value) {
         subjectInput.setValue(value).pressEnter();
         return this;
     }
-
+    @Step("Указали хобби")
     public RegistrationPage setHobbies(String value) {
         switch (value) {
             case "Sports":
@@ -106,89 +118,50 @@ RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal
         }
         return this;
     }
-
+    @Step("Загрузили картинку")
     public RegistrationPage uploadPicture(File file) {
         pictureInput.uploadFile(file);
         return this;
     }
-
+    @Step("Указали адрес")
     public RegistrationPage setCurrentAddress(String value) {
         currentAddressInput.setValue(value);
         return this;
     }
+    @Step("Указали штат")
     public RegistrationPage setState(String value) {
         stateInput.setValue(value).pressEnter();
         return this;
     }
+    @Step("Указали город")
     public RegistrationPage setCity(String value) {
         cityInput.setValue(value).pressEnter();
         return this;
     }
-
+    @Step("Подтвердили форму с данными")
     public RegistrationPage submitForm() {
         submitConfirmation.pressEnter();
         return this;
     }
-    public RegistrationPage modalTitleChecker(String value) {
-        modalTitle.shouldHave(text((value)));
-        return this;
-    }
 
-
-
-
+    @Step("Проверили, что итоговая форма появилась")
     public RegistrationPage verifyResultsModalAppears() {
         registrationResultsModal.verifyModalAppears();
         return this;
     }
 
+    @Step("Проверили, что установленный {key} отображается корректно: {value}")
     public RegistrationPage verifyResult(String key, String value) {
         registrationResultsModal.verifyResult(key, value);
         return this;
     }
 
+    @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
+    public byte[] takeScreenshot() {
+        return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
+    }
+
 }
-
-
-
-
-    /* Второй вариант методов без возврата.(Без цепочек)
-
-    public void setFirstName(String value) {
-        firstNameInput.setValue(value);
-    }
-
-    public void setLastName(String value) {
-        lastNameInput.setValue(value);
-    }
-
-    public void setEmail(String value) {
-        emailInput.setValue(value);
-    }
-
-    public void setUserNumber(String value) {
-        userNumberInput.setValue(value);
-    }
-
-    public void ClickGenderButton(String value) {
-        switch (value) {
-            case "Male":
-                genderMale.click();
-                break;
-            case "Female":
-                genderWomen.click();
-                break;
-            case "Other":
-                genderOther.click();
-                break;
-        }
-    }
-    public void setBirthDate(String day, String month, String year) {
-        $("input#dateOfBirthInput").click();
-        calendarComponent.setDate(day, month, year);
-    }
-
-     */
 
 
 

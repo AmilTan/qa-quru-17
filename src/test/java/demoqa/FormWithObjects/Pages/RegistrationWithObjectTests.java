@@ -1,6 +1,8 @@
 package demoqa.FormWithObjects.Pages;
 
 
+import io.qameta.allure.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -12,6 +14,12 @@ import static com.codeborne.selenide.Selenide.$;
 public class RegistrationWithObjectTests extends TestBase {
 
     @Test
+    @Feature("Форма регистрации студента")
+    @Story("Итоговое окно с данными из формы")
+    @Owner("Satoru Gojo")
+    @Severity(SeverityLevel.BLOCKER)
+    @Link(value = "Testing", url = "https://demoqa.com/automation-practice-form")
+    @DisplayName("Позитивный тест: формирование валидной заявки")
     void fillFormTest() throws InterruptedException {
 
         registrationPage.openPage()
@@ -29,7 +37,6 @@ public class RegistrationWithObjectTests extends TestBase {
                 .setCity("Delhi")
                 .submitForm()
                 .verifyResultsModalAppears()
-                .modalTitleChecker(FormSubmittingTitle)
                 .verifyResult("Student Name", firstName+" "+lastName)
                 .verifyResult("Student Email", email)
                 .verifyResult("Gender", Male)
@@ -39,24 +46,13 @@ public class RegistrationWithObjectTests extends TestBase {
                 .verifyResult("Hobbies", Reading)
                 .verifyResult("Picture", "testimage1.png")
                 .verifyResult("Address", currentAddress)
-                .verifyResult("State and City", "NCR Delhi");
+                .verifyResult("State and City", "NCR Delhi")
+                .takeScreenshot();
 
 
     }
 }
 
-    //Второй вариант оформления вызовы метедов (без цепочки)
-   /* @Test
-    void fillFormTest2() throws InterruptedException {
-
-     /* registrationPage.openPage();
-        registrationPage.setFirstName(firstName);
-        registrationPage.setLastName(lastName);
-        registrationPage.setEmail(email);
-        registrationPage.setUserNumber(userNumber);
-        registrationPage.ClickGenderButton(Male);
-        registrationPage.setBirthDate("08","Sep","1999");
-*/
 
 
 
