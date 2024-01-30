@@ -7,8 +7,10 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
+import java.util.Map;
 
 public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
@@ -27,9 +29,21 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
-        Configuration.browserSize = "1980x1080";
-        Configuration.baseUrl = "https://demoqa.com";
+
+            Configuration.baseUrl = "https://demoqa.com";
+            //Configuration.holdBrowserOpen = true;
+            Configuration.browser = "chrome";
+            Configuration.browserVersion = "100.0";
+            Configuration.browserSize = "1920x1080";
+            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                    "enableVNC", true,
+                    "enableVideo", true
+            ));
+
+            Configuration.browserCapabilities = capabilities;
     }
     @BeforeEach
      void beforeEach() {

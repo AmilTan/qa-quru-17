@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="demoqa.FormWithObjects.Pages.RegistrationWithObjectTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-30T10:44:16" hostname="MacBook-Pro-Amil.local" time="35.314">
+<testsuite name="demoqa.FormWithObjects.Pages.RegistrationWithObjectTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-30T14:02:55" hostname="MacBook-Pro-Amil.local" time="59.431">
   <properties/>
-  <testcase name="Позитивный тест: формирование валидной заявки" classname="demoqa.FormWithObjects.Pages.RegistrationWithObjectTests" time="35.314"/>
+  <testcase name="Позитивный тест: формирование валидной заявки" classname="demoqa.FormWithObjects.Pages.RegistrationWithObjectTests" time="59.431"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[янв. 30, 2024 1:44:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 121, so returning the closest version found: 117
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
