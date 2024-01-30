@@ -49,6 +49,7 @@ public class RegistrationWithObjectTests extends TestBase {
                 .verifyResult("Address", currentAddress)
                 .verifyResult("State and City", "NCR Delhi")
                 .takeScreenshot();
+
     }
 }
 
