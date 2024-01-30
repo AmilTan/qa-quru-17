@@ -308,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706559138761</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1)Лишние классы удалены, 2)аллюр отчет подключен, 3)ПОДХОД СТЕП внедрен, 4) Снимок в конце теста подключен, 5)Обработка всплывающего попапа  добавлена">
+      <created>1706561016734</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706561016734</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
