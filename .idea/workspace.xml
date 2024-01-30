@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="1)Лишние классы удалены, 2)аллюр отчет подключен, 3)ПОДХОД СТЕП внедрен, 4) Снимок в конце теста подключен, 5)Обработка всплывающего попапа  добавлена">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="версия проекта для билда" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +104,7 @@
       <recent name="demoqa" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.demoqa-tests-17 [allureServe]">
+  <component name="RunManager" selected="Gradle.RegistrationWithObjectTests.fillFormTest">
     <configuration name="RegistrationWithObjectTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -214,9 +212,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationWithObjectTests.fillFormTest" />
         <item itemvalue="Gradle.demoqa-tests-17 [allureServe]" />
         <item itemvalue="Gradle.RegistrationWithObjectTests" />
-        <item itemvalue="Gradle.RegistrationWithObjectTests.fillFormTest" />
         <item itemvalue="Gradle.TestBoxTests.fillFormTest" />
         <item itemvalue="JUnit.RegistrationWithObjectTests" />
       </list>
@@ -315,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706561016734</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="версия проекта для билда">
+      <created>1706611073615</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706611073615</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,6 +344,7 @@
     <MESSAGE value="all updates in it. LESSON7 new" />
     <MESSAGE value="Лишние классы удалены, аллюр отчет подключен, ПОДХОД СТЕП внедрен." />
     <MESSAGE value="1)Лишние классы удалены, 2)аллюр отчет подключен, 3)ПОДХОД СТЕП внедрен, 4) Снимок в конце теста подключен, 5)Обработка всплывающего попапа  добавлена" />
-    <option name="LAST_COMMIT_MESSAGE" value="1)Лишние классы удалены, 2)аллюр отчет подключен, 3)ПОДХОД СТЕП внедрен, 4) Снимок в конце теста подключен, 5)Обработка всплывающего попапа  добавлена" />
+    <MESSAGE value="версия проекта для билда" />
+    <option name="LAST_COMMIT_MESSAGE" value="версия проекта для билда" />
   </component>
 </project>
