@@ -35,6 +35,5 @@ public class TestBase {
      void beforeEach() {
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
-
 }
 
