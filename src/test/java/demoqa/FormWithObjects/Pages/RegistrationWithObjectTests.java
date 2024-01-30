@@ -11,7 +11,7 @@ import java.io.File;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 
-
+@Tag("simple")
 public class RegistrationWithObjectTests extends TestBase {
     @Test
     @Tag("simple")
