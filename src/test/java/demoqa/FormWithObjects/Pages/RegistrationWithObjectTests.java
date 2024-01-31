@@ -52,6 +52,7 @@ public class RegistrationWithObjectTests extends TestBase {
         registrationPage.verifyResult("Picture", "testimage1.png");
         registrationPage.verifyResult("Address", currentAddress);
         registrationPage.verifyResult("State and City", "NCR Delhi");
+
     }
 
 

@@ -10,6 +10,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -55,6 +56,7 @@ public class TestBase {
     }
     @BeforeEach
      void beforeEach() {
+        ChromeDriver driver = new ChromeDriver();
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
@@ -64,6 +66,8 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        closeWebDriver();
+
      }
 
 }
