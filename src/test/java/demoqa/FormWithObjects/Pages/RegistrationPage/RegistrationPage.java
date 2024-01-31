@@ -10,6 +10,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.Condition.*;
@@ -161,6 +163,24 @@ RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal
        // field.shouldHave(cssValue("border-top-color", "rgb(220, 53, 69)"));
         field.shouldBe(visible);
         return this;
+    }
+
+    @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
+    public String addVideo() {
+        return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
+                + getVideoUrl()
+                + "' type='video/mp4'></video></body></html>";
+    }
+
+    public URL getVideoUrl() {
+        String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId() + ".mp4";
+//        System.out.println(sessionId());
+        try {
+            return new URL(videoUrl);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 }

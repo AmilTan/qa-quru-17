@@ -50,7 +50,8 @@ public class RegistrationWithObjectTests extends TestBase {
                 .verifyResult("Hobbies", Reading)
                 .verifyResult("Picture", "testimage1.png")
                 .verifyResult("Address", currentAddress)
-                .verifyResult("State and City", "NCR Delhi");
+                .verifyResult("State and City", "NCR Delhi")
+                .addVideo();
     }
 
 
@@ -77,7 +78,8 @@ public class RegistrationWithObjectTests extends TestBase {
                 .setState("NCR")
                 .setCity("Delhi")
                 .submitForm()
-                .checkInvalidField($(invalidPhoneSelector));
+                .checkInvalidField($(invalidPhoneSelector))
+                .addVideo();
     }
 
 }

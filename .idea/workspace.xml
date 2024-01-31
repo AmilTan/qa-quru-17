@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="new3">
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/Helpers/Attach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/Helpers/Attach.java" afterDir="false" />
+    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="-static">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" afterDir="false" />
     </list>
@@ -479,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706714895134</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="-static">
+      <created>1706715248209</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1706715248209</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added dependencies" />
     <MESSAGE value="added tests" />
     <MESSAGE value="added css xpath examples" />
     <MESSAGE value="all updates in it. LESSON7" />
@@ -520,6 +527,7 @@
     <MESSAGE value="new reqPage4" />
     <MESSAGE value="new" />
     <MESSAGE value="new3" />
-    <option name="LAST_COMMIT_MESSAGE" value="new3" />
+    <MESSAGE value="-static" />
+    <option name="LAST_COMMIT_MESSAGE" value="-static" />
   </component>
 </project>
