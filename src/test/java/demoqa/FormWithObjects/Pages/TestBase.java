@@ -55,8 +55,7 @@ public class TestBase {
     @BeforeEach
      void beforeEach() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        Selenide.clearBrowserCookies(); // Добавьте эту строку
-        Selenide.clearBrowserLocalStorage();
+
     }
 
     @AfterEach
@@ -65,6 +64,8 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        Selenide.clearBrowserCookies(); // Добавьте эту строку
+        Selenide.clearBrowserLocalStorage();
      }
 
 }
