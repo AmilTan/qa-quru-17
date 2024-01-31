@@ -16,6 +16,7 @@ import java.io.File;
 import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
     RegistrationPage registrationPage;
@@ -55,8 +56,6 @@ public class TestBase {
     @BeforeEach
      void beforeEach() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-        this.registrationPage = new RegistrationPage();
-
     }
 
     @AfterEach
@@ -65,7 +64,7 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
-
+        closeWebDriver();
      }
 
 }

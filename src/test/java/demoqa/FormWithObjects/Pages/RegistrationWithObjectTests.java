@@ -26,7 +26,7 @@ public class RegistrationWithObjectTests extends TestBase {
     @Link(value = "Testing", url = "https://demoqa.com/automation-practice-form")
     @DisplayName("Позитивный тест: формирование валидной заявки")
     void fillFormTest() throws InterruptedException {
-        new RegistrationPage().openPage()
+        registrationPage.openPage()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
@@ -63,7 +63,7 @@ public class RegistrationWithObjectTests extends TestBase {
     @Link(value = "Testing", url = "https://demoqa.com/automation-practice-form")
     @DisplayName("Негативный тест: не введен номер телефона")
     void negativeFillFormTest() throws InterruptedException {
-         registrationPage.openPage()
+                registrationPage.openPage()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
