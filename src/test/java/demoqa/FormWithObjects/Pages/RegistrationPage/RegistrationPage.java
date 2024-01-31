@@ -44,8 +44,6 @@ RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal
 
 
 
-
-    //Первый вариант
     @Step("Открываем страницу с формой регистрации")
     public RegistrationPage openPage() {
         open("/automation-practice-form");

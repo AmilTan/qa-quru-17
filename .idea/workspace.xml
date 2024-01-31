@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="remote connect added+">
-      <change afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/Helpers/Attach.java" afterDir="false" />
+    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="создали форк test">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,12 +14,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/demoqa/FormWithObjects/Pages/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/demoqa.FormWithObjects.Pages.RegistrationWithObjectTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/demoqa.FormWithObjects.Pages.RegistrationWithObjectTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/demoqa.FormWithObjects.Pages.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/demoqa.FormWithObjects.Pages.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-demoqa.FormWithObjects.Pages.RegistrationWithObjectTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-demoqa.FormWithObjects.Pages.RegistrationWithObjectTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/RegistrationPage.java" afterDir="false" />
@@ -88,6 +88,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -117,6 +122,9 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -197,29 +205,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestBoxTests.fillFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;demoqa.testBoxTests.TestBoxTests.fillFormTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="demoqa-tests-17 [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -241,13 +226,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="demoqa-tests-17 [downloadAllure]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="downloadAllure" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.demoqa-tests-17 [allureServe]" />
+        <item itemvalue="Gradle.demoqa-tests-17 [downloadAllure]" />
         <item itemvalue="Gradle.RegistrationWithObjectTests" />
         <item itemvalue="Gradle.RegistrationWithObjectTests.negativeFillFormTest" />
         <item itemvalue="Gradle.RegistrationWithObjectTests.fillFormTest" />
-        <item itemvalue="Gradle.TestBoxTests.fillFormTest" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706623779593</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="добавлен негат тест (+метод)&#10;настроен after each">
+      <created>1706682065904</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1706682065904</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,6 +465,8 @@
     <MESSAGE value="версия проекта для билда0" />
     <MESSAGE value="remote connect added" />
     <MESSAGE value="remote connect added+" />
-    <option name="LAST_COMMIT_MESSAGE" value="remote connect added+" />
+    <MESSAGE value="добавлен негат тест (+метод)&#10;настроен after each" />
+    <MESSAGE value="создали форк test" />
+    <option name="LAST_COMMIT_MESSAGE" value="создали форк test" />
   </component>
 </project>
