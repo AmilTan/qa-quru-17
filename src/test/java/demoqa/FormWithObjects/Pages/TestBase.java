@@ -56,7 +56,6 @@ public class TestBase {
     }
     @BeforeEach
      void beforeEach() {
-        ChromeDriver driver = new ChromeDriver();
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
@@ -66,7 +65,6 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
-        closeWebDriver();
 
      }
 

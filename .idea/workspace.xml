@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="new">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="new3">
+      <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/Helpers/Attach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationPage/Helpers/Attach.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" afterDir="false" />
     </list>
@@ -472,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706714094008</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="new3">
+      <created>1706714895134</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1706714895134</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -488,7 +495,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added .gitignore" />
     <MESSAGE value="added dependencies" />
     <MESSAGE value="added tests" />
     <MESSAGE value="added css xpath examples" />
@@ -513,6 +519,7 @@
     <MESSAGE value="new reqPage3" />
     <MESSAGE value="new reqPage4" />
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="new3" />
+    <option name="LAST_COMMIT_MESSAGE" value="new3" />
   </component>
 </project>
