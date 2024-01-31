@@ -55,6 +55,7 @@ public class TestBase {
     @BeforeEach
      void beforeEach() {
         SelenideLogger.addListener("allure", new AllureSelenide());
+        this.registrationPage = new RegistrationPage();
 
     }
 
