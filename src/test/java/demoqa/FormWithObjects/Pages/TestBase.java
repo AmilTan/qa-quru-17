@@ -41,12 +41,12 @@ public class TestBase {
             Configuration.browser = "chrome";
             Configuration.browserVersion = "100.0";
             Configuration.browserSize = "1920x1080";
-            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
     }
     @BeforeEach
      void beforeEach() {
         SelenideLogger.addListener("allure", new AllureSelenide());
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
