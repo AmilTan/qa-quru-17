@@ -10,10 +10,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class RegistrationPage {
 CalendarComponent calendarComponent = new CalendarComponent();
@@ -150,15 +151,18 @@ RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal
         return this;
     }
 
-    @Step("Проверили, что установленный {key} отображается корректно: {value}")
+    @Step("Проверили, что установленное значение для {key} отображается корректно: {value}")
     public RegistrationPage verifyResult(String key, String value) {
         registrationResultsModal.verifyResult(key, value);
         return this;
     }
 
-    @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
-    public byte[] takeScreenshot() {
-        return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
+    //Методы для негативных тестов
+    @Step("Проверили, что обязательное поле приняло состояние невалидного - {field}")
+    public RegistrationPage checkInvalidField(SelenideElement field) {
+       // field.shouldHave(cssValue("border-top-color", "rgb(220, 53, 69)"));
+        field.shouldBe(visible);
+        return this;
     }
 
 }
