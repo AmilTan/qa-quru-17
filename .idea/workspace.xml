@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="new reqPage3">
+    <list default="true" id="6be5c2e7-c120-447a-baf1-bb3759856c76" name="Changes" comment="new reqPage4">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/RegistrationWithObjectTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoqa/FormWithObjects/Pages/TestBase.java" afterDir="false" />
     </list>
@@ -457,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706711583716</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="new reqPage4">
+      <created>1706712646281</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1706712646281</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,6 +504,7 @@
     <MESSAGE value="delete cookiesand cesh2" />
     <MESSAGE value="new reqPage" />
     <MESSAGE value="new reqPage3" />
-    <option name="LAST_COMMIT_MESSAGE" value="new reqPage3" />
+    <MESSAGE value="new reqPage4" />
+    <option name="LAST_COMMIT_MESSAGE" value="new reqPage4" />
   </component>
 </project>
