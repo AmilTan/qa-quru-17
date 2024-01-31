@@ -18,7 +18,7 @@ import java.util.Map;
 import static com.codeborne.selenide.Selenide.$;
 
 public class TestBase {
-    RegistrationPage registrationPage = new RegistrationPage();
+    RegistrationPage registrationPage;
     String firstName = "Test";
     String lastName = "Testov";
     String email = "test@gmail.com";
@@ -64,8 +64,7 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
-        Selenide.clearBrowserCookies(); // Добавьте эту строку
-        Selenide.clearBrowserLocalStorage();
+
      }
 
 }
