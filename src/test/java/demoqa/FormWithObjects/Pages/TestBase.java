@@ -1,6 +1,7 @@
 package demoqa.FormWithObjects.Pages;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import demoqa.FormWithObjects.Pages.RegistrationPage.Helpers.Attach;
@@ -41,11 +42,6 @@ public class TestBase {
             Configuration.browser = "chrome";
             Configuration.browserVersion = "100.0";
             Configuration.browserSize = "1920x1080";
-
-    }
-    @BeforeEach
-     void beforeEach() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
@@ -54,6 +50,13 @@ public class TestBase {
         ));
 
         Configuration.browserCapabilities = capabilities;
+
+    }
+    @BeforeEach
+     void beforeEach() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+        Selenide.clearBrowserCookies(); // Добавьте эту строку
+        Selenide.clearBrowserLocalStorage();
     }
 
     @AfterEach
