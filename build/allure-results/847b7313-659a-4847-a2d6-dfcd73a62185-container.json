@@ -1,1 +1,0 @@
-{"uuid":"847b7313-659a-4847-a2d6-dfcd73a62185","name":"Позитивный тест: формирование валидной заявки","children":["8f4e963c-45ce-4485-9371-7b59819328a3"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1706551110183,"stop":1706551110188}],"afters":[],"start":1706551110007,"stop":1706551124300}

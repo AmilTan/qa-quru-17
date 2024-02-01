@@ -9,6 +9,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -31,6 +34,9 @@ public class TestBase {
     File imageFile = new File("src/test/resources/images/testimage1.png");
     String currentAddress = "currentAddress";
     String invalidPhoneSelector = "input#userNumber.mr-sm-2.form-control:invalid";
+    String invalidFirstNameSelector = "input#firstName.mr-sm-2.form-control:invalid";
+    String invalidLastNameSelector = "input#lastName.mr-sm-2.form-control:invalid";
+
 
 
     @BeforeAll
@@ -39,8 +45,8 @@ public class TestBase {
             Configuration.baseUrl = "https://demoqa.com";
             Configuration.holdBrowserOpen = true;
             Configuration.browser = "chrome";
-            Configuration.browserVersion = "100.0";
             Configuration.browserSize = "1920x1080";
+            Configuration.browserVersion = "100.0";
             Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -63,7 +69,7 @@ public class TestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
-     }
 
+     }
 }
 

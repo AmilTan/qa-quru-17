@@ -1,20 +1,14 @@
 package demoqa.FormWithObjects.Pages.RegistrationPage;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
 import demoqa.FormWithObjects.Pages.RegistrationPage.Components.CalendarComponent;
 import demoqa.FormWithObjects.Pages.RegistrationPage.Components.RegistrationResultsModal;
-import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 
 import java.io.File;
-import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class RegistrationPage {
 CalendarComponent calendarComponent = new CalendarComponent();
@@ -24,7 +18,7 @@ RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal
             firstNameInput = $("input#firstName.mr-sm-2.form-control"),
             lastNameInput = $("input#lastName.mr-sm-2.form-control"),
             emailInput = $("input#userEmail.mr-sm-2.form-control"),
-            userNumberInput = $("input#userNumber.mr-sm-2.form-control"),
+            mobileInput = $("input#userNumber.mr-sm-2.form-control"),
             genderMale = $("#gender-radio-1 + label"),//
     // $("input#gender-radio-1").parent().$("label").click(); этот вариан тоже рабочий.
             genderWomen = $("#gender-radio-2 + label"),
@@ -74,8 +68,8 @@ RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal
         return this;
     }
     @Step("Указали телефон")
-    public RegistrationPage setUserNumber(String value) {
-        userNumberInput.setValue(value);
+    public RegistrationPage setMobile(String value) {
+        mobileInput.setValue(value);
         return this;
     }
     @Step("Выбрали гендер")
