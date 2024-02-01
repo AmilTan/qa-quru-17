@@ -1,20 +1,14 @@
 package demoqa.FormWithObjects.Pages;
 
 
-import com.codeborne.selenide.SelenideElement;
-import demoqa.FormWithObjects.Pages.RegistrationPage.Helpers.Attach;
-import demoqa.FormWithObjects.Pages.RegistrationPage.RegistrationPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
-
-import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 
-@Tag("simple")
+
 public class RegistrationWithObjectTests extends TestBase {
 
     @Test
@@ -30,7 +24,7 @@ public class RegistrationWithObjectTests extends TestBase {
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
-                .setUserNumber(userNumber)
+                .setMobile(userNumber)
                 .ClickGenderButton(Male)
                 .setBirthDate("08","September","1999")
                 .setSubject("Maths")
@@ -53,21 +47,49 @@ public class RegistrationWithObjectTests extends TestBase {
                 .verifyResult("State and City", "NCR Delhi");
     }
 
-
+  //  @Disabled("отключен для теста")
     @Test
     @Tag("simple")
+    @Tag("negative")
+    @Feature("Форма регистрации студента")
+    @Story("Итоговое окно с данными из формы")
+    @Owner("Satoru Gojo")
+    @Severity(SeverityLevel.BLOCKER)
+    @Link(value = "Testing", url = "https://demoqa.com/automation-practice-form")
+    @DisplayName("Негативный тест: не введено имя")
+    void doNotEnterFirstName() throws InterruptedException {
+        registrationPage.openPage()
+               // .setFirstName(firstName)
+                .setLastName(lastName)
+                .setEmail(email)
+                .setMobile(userNumber)
+                .ClickGenderButton(Male)
+                .setBirthDate("08","September","1999")
+                .setSubject("Maths")
+                .setHobbies(Reading)
+                .uploadPicture(imageFile)
+                .setCurrentAddress(currentAddress)
+                .setState("NCR")
+                .setCity("Delhi")
+                .submitForm()
+                .checkInvalidField($(invalidFirstNameSelector));
+    }
+//  @Disabled("отключен для теста")
+    @Test
+    @Tag("simple")
+    @Tag("negative")
     @Feature("Форма регистрации студента")
     @Story("Итоговое окно с данными из формы")
     @Owner("Satoru Gojo")
     @Severity(SeverityLevel.BLOCKER)
     @Link(value = "Testing", url = "https://demoqa.com/automation-practice-form")
     @DisplayName("Негативный тест: не введен номер телефона")
-    void negativeFillFormTest() throws InterruptedException {
+    void doNotEnterPhoneNumber() throws InterruptedException {
         registrationPage.openPage()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
-              //  .setUserNumber(userNumber)
+//                .setMobile(userNumber)
                 .ClickGenderButton(Male)
                 .setBirthDate("08","September","1999")
                 .setSubject("Maths")
@@ -79,6 +101,37 @@ public class RegistrationWithObjectTests extends TestBase {
                 .submitForm()
                 .checkInvalidField($(invalidPhoneSelector));
     }
+
+    //  @Disabled("отключен для теста")
+    @Test
+    @Tag("simple")
+    @Tag("negative")
+    @Feature("Форма регистрации студента")
+    @Story("Итоговое окно с данными из формы")
+    @Owner("Satoru Gojo")
+    @Severity(SeverityLevel.BLOCKER)
+    @Link(value = "Testing", url = "https://demoqa.com/automation-practice-form")
+    @DisplayName("Негативный тест: не введена фамилия")
+    void doNotEnterLastName() throws InterruptedException {
+        registrationPage.openPage()
+                .setFirstName(firstName)
+   //             .setLastName(lastName)
+                .setEmail(email)
+                .setMobile(userNumber)
+                .ClickGenderButton(Male)
+                .setBirthDate("08","September","1999")
+                .setSubject("Maths")
+                .setHobbies(Reading)
+                .uploadPicture(imageFile)
+                .setCurrentAddress(currentAddress)
+                .setState("NCR")
+                .setCity("Delhi")
+                .submitForm()
+                .checkInvalidField($(invalidLastNameSelector));
+    }
+
+
+
 
 }
 

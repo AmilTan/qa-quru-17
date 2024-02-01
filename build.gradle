@@ -6,6 +6,10 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+repositories {
+    mavenCentral()
+}
+
 allure {
     report {
         version.set("2.19.0")
@@ -20,9 +24,10 @@ allure {
     }
 }
 
-repositories {
-    mavenCentral()
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
+
 
 dependencies {
     testImplementation(
@@ -43,5 +48,11 @@ test {
 task simple_test(type: Test) {
     useJUnitPlatform {
         includeTags("simple")
+    }
+}
+
+task negative_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("negative")
     }
 }
