@@ -130,9 +130,6 @@ public class RegistrationWithObjectTests extends TestBase {
                 .checkInvalidField($(invalidLastNameSelector));
     }
 
-
-
-
 }
 
 
