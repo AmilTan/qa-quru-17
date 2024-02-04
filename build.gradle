@@ -40,19 +40,33 @@ dependencies {
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.9.0')
 }
 
-test {
-    useJUnitPlatform()
+
+tasks.withType(Test) {
     systemProperties(System.getProperties())
-}
+    useJUnitPlatform()
 
-task simple_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("simple")
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
     }
 }
 
-task negative_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("negative")
-    }
-}
+//test {
+//    useJUnitPlatform()
+//    systemProperties(System.getProperties())
+//}
+
+//task simple_test(type: Test) {
+//    useJUnitPlatform {
+//        includeTags("simple")
+//    }
+//}
+//
+//task negative_test(type: Test) {
+//    useJUnitPlatform {
+//        includeTags("negative")
+//    }
+//}
+//
